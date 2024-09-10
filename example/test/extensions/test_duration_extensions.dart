@@ -4,10 +4,12 @@
 ///
 ///          Created 17 March, 2023
 ///
-// ignore: unused_import
-import '../_unit_test_view.dart';
 
-void testDynamicExtension() {
+import '../_export_files.dart';
+
+void testDurationExtension() {
   //
-//  test('Test Dynamic Extension', () async {});
+//  test('Test Duration Extension', () async {});
+
+  2.seconds.delay(() {});
 }

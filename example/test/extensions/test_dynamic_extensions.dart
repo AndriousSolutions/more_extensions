@@ -5,6 +5,15 @@
 ///          Created 17 March, 2023
 ///
 
-import '../_unit_test_view.dart';
+import '../_export_files.dart';
 
-void testVarStr(WidgetTester tester) {}
+void testDynamicExtension() {
+  //
+//  test('Test Dynamic Extension', () {
+
+  ''.isBlank;
+
+  <Widget>[].isBlank;
+
+//  });
+}

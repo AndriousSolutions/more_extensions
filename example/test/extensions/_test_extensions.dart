@@ -5,11 +5,13 @@
 ///          Created 20 March, 2023
 ///
 
-import '../_unit_test_view.dart';
+import '../_export_files.dart';
 
-testExtensions(WidgetTester tester) {
+void testExtensions(WidgetTester tester) {
   //
-  testContextExtension(App.context!);
+  final state = StateSet.stateOf<MyHomePage>();
+
+  testContextExtension(state!.context);
 
   testDoubleExtension();
 

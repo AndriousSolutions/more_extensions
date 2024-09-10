@@ -121,11 +121,6 @@ extension ContextExtension on BuildContext {
   /// similar to [MediaQuery.of(this).devicePixelRatio]
   double get devicePixelRatio => MediaQuery.of(this).devicePixelRatio;
 
-  @Deprecated('Use the TextScaler object now instead')
-
-  /// similar to [MediaQuery.of(this).textScaleFactor]
-  double get textScaleFactor => 0;
-
   /// The font scaling strategy to use for laying out textual contents.
   TextScaler get textScaler => MediaQuery.of(this).textScaler;
 
@@ -159,10 +154,10 @@ extension ContextExtension on BuildContext {
     T? desktop,
     T? watch,
   }) {
-    var deviceWidth = mediaQuerySize.shortestSide;
-    if (UniversalPlatform.isDesktop) {
-      deviceWidth = mediaQuerySize.width;
-    }
+    final deviceWidth = mediaQuerySize.shortestSide;
+    // if (UniversalPlatform.isDesktop) {  // Not available in this package. See what happens. go
+    //   deviceWidth = mediaQuerySize.width;
+    // }
     if (deviceWidth >= 1200 && desktop != null) {
       return desktop;
     } else if (deviceWidth >= 600 && tablet != null) {

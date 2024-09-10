@@ -5,11 +5,12 @@
 ///          Created 17 March, 2023
 ///
 
-import '../_unit_test_view.dart';
+import '../_export_files.dart';
 
-void testDurationExtension() {
+void testDoubleExtension() {
   //
-//  test('Test Duration Extension', () async {});
-
-  2.seconds.delay(() async {});
+//  test('Test Double Extension', () async {
+  //
+  1.21643.toPrecision(2);
+//  });
 }

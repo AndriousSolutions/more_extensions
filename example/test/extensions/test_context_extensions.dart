@@ -5,11 +5,12 @@
 ///          Created 17 March, 2023
 ///
 
-import '../_unit_test_view.dart';
+import '../_export_files.dart';
 
+/// Test Context Extension
 void testContextExtension(BuildContext context) {
   //
-//  test('Test Context Extension', () async {
+  // test('Test Context Extension', () {
   //
   context.mediaQuerySize;
 
@@ -47,7 +48,7 @@ void testContextExtension(BuildContext context) {
 
   context.devicePixelRatio;
 
-  // context.textScaleFactor;
+  context.textScaler;
 
   context.mediaQueryShortestSide;
 
@@ -67,5 +68,5 @@ void testContextExtension(BuildContext context) {
     desktop: 'desktop',
     watch: 'watch',
   );
-//  });
+  // });
 }

@@ -27,8 +27,6 @@ library more_extensions;
 
 import 'dart:async';
 
-import '_extensions.dart';
-
 /// Duration utilities.
 ///
 ///
